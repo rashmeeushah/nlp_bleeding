@@ -272,11 +272,11 @@ andnots = {
            'Ophtho': [21117005, 232033003, 40788000],
            'Ret_hematoma': [197812000, 713036004],
            'Ortho': [],
-           'Pulmonary': [12441001] #Still getting nosebleed here
+           'Pulmonary': [12441001]
            }
-#sets = ['Cardiac', 'OBGYN', 'ENT', 'GU', 'Gastrointestinal', 'Neurology', 'Pulmonary', 'Ortho', 'Ret_hematoma', 'Ophtho', 'General']
 
-sets = pd.read_pickle('./data/sets.pkl')
+sets = ['Cardiac', 'OBGYN', 'ENT', 'GU', 'Gastrointestinal', 'Neurology', 'Pulmonary', 'Ortho', 'Ret_hematoma', 'Ophtho', 'General']
+
 andnot_sets = list(andnots.keys())
 if len(andnot_sets) != len(sets):
     raise Exception('Dictionary does not have all the sets')
